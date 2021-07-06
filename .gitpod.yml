@@ -3,6 +3,8 @@ image:
 
 # exposed ports
 ports:
+- port: 5001 # product-service
+  onOpen: ignore
 - port: 5000 # preview on browser
   onOpen: open-browser
 
