@@ -8,7 +8,7 @@ ports:
 
 tasks:
   - init: |
-      docker-compose up
+      docker-compose build
     command: |
-      sleep 1
+      docker-compose start
   - command: gp await-port 5000 && gp preview "$(gp url 5000)"
