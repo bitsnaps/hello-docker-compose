@@ -10,5 +10,5 @@ tasks:
   - init: |
       docker-compose build
     command: |
-      docker-compose start
+      docker-compose up
   - command: gp await-port 5000 && gp preview "$(gp url 5000)"
