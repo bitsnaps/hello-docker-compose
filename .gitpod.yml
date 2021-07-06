@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+# exposed ports
+ports:
+- port: 5000 # preview on browser
+  onOpen: open-browser
+
+tasks:
+  - init: |
+      docker-compose up
+    command: |
+      sleep 1
+  - command: gp await-port 5000 && gp preview "$(gp url 5000)"

@@ -1,5 +1,8 @@
 # Simple docker-compose example
 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/bitsnaps/hello-docker-compose)
+
+
 This example uses docker-compose tool to spin up two container (aka services):
 - Flask rest api (providing a list of products in json format), image size: ~702Mb
 - A simplest php web page to list json products, image size: 417Mb
